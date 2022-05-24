@@ -1,0 +1,104 @@
+*
+{
+    margin:0px;
+    padding:0px;
+}
+#navbar
+{
+    display:flex;
+    align-items:center;
+}
+#logo
+{
+margin: 7px 8px;
+}
+#logo img
+{
+    margin:6px 5px;
+    width:105px;
+}
+#navbar{
+    position:relative;
+}
+
+#navbar ul
+{
+    display:flex;
+    font-family: 'Bree Serif', serif;
+}
+
+#navbar ul li
+{list-style:none;
+font-size:1.3rem;
+}
+
+#navbar ul li a{
+    color:white;
+    display:block;
+    padding:9px 25px;
+    border-radius:24px;
+    text-decoration:none;
+
+
+}
+#navbar ul li a:hover{
+
+    color:black;
+    background-color:white;
+   
+}
+#navbar::before
+{
+    content:"";
+    background-color:black;
+    position:absolute;
+    height:100%;
+    width:100%;
+    z-index:-1;
+    opacity:0.4;
+
+}
+#home
+{
+    display:flex;
+    flex-direction:column;
+    padding:3px 200px;
+    justify-content:center;
+    align-items: center;
+}
+#home::before
+{
+    background: url('../chotucake.jpg') no-repeat center center/cover;
+    content:"";
+    position:absolute;
+    height:100%;
+    width:100%;
+    z-index:-1;
+    opacity:0.6;
+}
+#home h1{
+    color:white;
+    text-align:center;
+}
+#home p
+{
+    color:white;
+    text-align:center;
+    font-size:2.3rem;
+}
+.heading
+{
+    font-size:3.8rem;
+    padding:12px;
+    font-family: 'Baloo Chettan 2', cursive;
+}
+.btn
+{
+    padding:6px 24px;
+    border: 2px solid white;
+    background-color:#fabdc4ad;
+    margin:11px;
+    font-size:1.5rem;
+    border-radius:15px;
+    cursor:pointer;
+}
